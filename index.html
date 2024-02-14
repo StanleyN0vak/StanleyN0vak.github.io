@@ -16,6 +16,7 @@
 
 <script>
     const fleeButton = document.getElementById('run');
+    const fleeButtonD = document.getElementById('run');
 
     fleeButton.addEventListener('touchstart', (event) => {
         event.preventDefault();
@@ -24,6 +25,13 @@
         fleeButton.style.left = `${randomX}px`;
         fleeButton.style.top = `${randomY}px`;
     })
+
+    fleeButtonD.addEventListener('mouseover', () => {
+        const randomX = Math.random() * (window.innerWidth - fleeButtonD.clientWidth);
+        const randomY = Math.random() * (window.innerHeight - fleeButtonD.clientHeight);
+        fleeButtonD.style.left = `${randomX}px`;
+        fleeButtonD.style.top = `${randomY}px`;
+    });
 </script>
 </body>
 </html>
