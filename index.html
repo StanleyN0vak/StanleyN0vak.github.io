@@ -17,7 +17,8 @@
 <script>
     const fleeButton = document.getElementById('run');
 
-    fleeButton.addEventListener('mouseover', () => {
+    fleeButton.addEventListener('touchstart', (event) => {
+        event.preventDefault();
         const randomX = Math.random() * (window.innerWidth - fleeButton.clientWidth);
         const randomY = Math.random() * (window.innerHeight - fleeButton.clientHeight);
         fleeButton.style.left = `${randomX}px`;
