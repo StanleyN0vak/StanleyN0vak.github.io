@@ -1,0 +1,64 @@
+@font-face {
+    font-family: Valentine;
+    src: url("Great_Vibes/GreatVibes-Regular.ttf");
+}
+
+*{
+    background: #ffacda;
+    font-family: Valentine, serif;
+}
+
+body{
+    display: grid;
+    grid-template-areas:
+        'h1'
+        'img'
+        'nav';
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 4vh;
+}
+
+button{
+    padding: 2vh;
+    size: 2vh;
+    border-radius: 20px;
+    background: #f2ddff;
+    border: none;
+    transition: transform 1000ms;
+    font-size: 3vh;
+    margin-left: -30%;
+}
+
+button:hover,
+button:focus-visible{
+    background: #ffdee8;
+    transform: translateY(-1.5vh);
+    transition: transform 250ms;
+    position: relative;
+}
+
+img{
+    size: auto;
+    width: 100%;
+}
+
+#run {
+    position: absolute;
+    top: 51.5%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    border: none;
+    cursor: pointer;
+    transition: 0.5s; /* Dodajemy efekt przejścia */
+}
