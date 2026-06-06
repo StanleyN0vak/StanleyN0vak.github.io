@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #4285f4;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+    p { font-size: 1.2rem; opacity: 0.9; }
+  </style>
+</head>
+<body>
+  <p>Trwa przekierowanie do formularza...</p>
+  <script>
+    var forms = [
+      'https://docs.google.com/forms/d/e/1FAIpQLSfaQO6UGPfUEFo5XeyVpYo0RSUjaoFMCnlhlBjM4SiwPv0QjQ/viewform',
+      'https://docs.google.com/forms/d/e/1FAIpQLSegnJiAke3wQ7EoASV_ZmUfjPAbsCb4lqHOezNd_c-zYHDmTQ/viewform',
+      'https://docs.google.com/forms/d/e/1FAIpQLSdCqYeNWLuJAGpkHPQePtrXz-48keCUXFbw8AjSzfigIOfg_A/viewform',
+      'https://docs.google.com/forms/d/e/1FAIpQLSctecGntLj8KuxxffeboxrIBGvfrvKO_05OBMadaQbyh7cdVQ/viewform',
+      'https://docs.google.com/forms/d/e/1FAIpQLSewx8xK0z6MWnhCKKx9yyAdykAv-xDsUH5t_bgAFjN6_-Tmtg/viewform',
+      'https://docs.google.com/forms/d/e/1FAIpQLSeoOtoKvc-5sMZnWsPo178s55ULMVQptWupgd6yerFfb2VmWQ/viewform'
+    ];
+    var wylosowany = forms[Math.floor(Math.random() * forms.length)];
+    window.location.replace(wylosowany);
+  </script>
+</body>
+</html>
